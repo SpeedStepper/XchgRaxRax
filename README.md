@@ -1,13 +1,8 @@
-# xorpd-solutions
-[![](https://img.shields.io/github/stars/0xdea/xorpd-solutions.svg?color=yellow)](https://github.com/0xdea/xorpd-solutions)
-[![](https://img.shields.io/github/forks/0xdea/xorpd-solutions.svg?color=green)](https://github.com/0xdea/xorpd-solutions)
-[![](https://img.shields.io/github/watchers/0xdea/xorpd-solutions.svg?color=red)](https://github.com/0xdea/xorpd-solutions)
-[![](https://img.shields.io/badge/license-MIT%20License-red.svg?color=lightgray)](https://opensource.org/licenses/MIT) 
-[![](https://img.shields.io/badge/twitter-%400xdea-blue.svg)](https://twitter.com/0xdea)
+# Xchg Rax,Rax Solutions
 
-[SPOILER ALERT] My attempt at tackling the x86_64 asm riddles in xorpd's xchg rax,rax book. Pull requests welcome.
+ A forked repo of 0xdea's attempt at tackling the x86 asm code in xorpd's "xchg rax,rax" book.
 
-> ; 0x40 assembly riddles
+## Book Summary
 >
 > "xchg rax,rax" is a collection of assembly gems and riddles I found over many years of reversing and writing assembly code. The book contains 0x40 short assembly snippets, each built to teach you one concept about assembly, math or life in general.
 >
