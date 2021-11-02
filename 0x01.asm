@@ -11,7 +11,7 @@ _start:
 	mov		rdx, 1 				; Initialize the rdx register.
 
 fib_loop:
-	xadd	rax, rdx				; Exchange and add.
+	xadd	rax, rdx			; Exchange and add.
 	loop	fib_loop
 
 	section	.data
