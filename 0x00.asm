@@ -6,7 +6,7 @@
 	section	.text
 _start:
 	xor		eax, eax		; Set rax to 0 by xor'ing it with itself.
-	lea		rbx, [0]			; Set rbx to 0 by loading the value 0 into it.
+	lea		rbx, [0]		; Set rbx to 0 by loading the value 0 into it.
 	mov		ecx, loop_iteration
 	loop	$				; Set rcx to 0 by decrementing it via a loop.
 	mov		rdx, 0 			; Set rdx to 0 using the mov instruction.
