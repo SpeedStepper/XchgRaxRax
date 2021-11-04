@@ -9,3 +9,9 @@ _start:
 	neg		rax			; Two's complement negation (0 - rax) carry = 1 if rax ! = 0.
 	sbb		rax, rax	; rax - rax - cf (it can be either 0 or -1)
 	neg		rax			; two's complement (it can be either 0 or 1)
+
+; Simple way of setting something to 1 In pseudo code, it might look something like this:
+; if (value != 0) then
+;	 value = 1
+; else
+;	 value = 0
