@@ -7,5 +7,5 @@
 _start:
 	mov		rax, 1		; Initialize the rax register, can be anything but zero.
 	neg		rax			; Two's complement negation (0 - rax) carry = 1 if rax ! = 0.
-	sbb		rax, rax		; rax - rax - cf (it can be either 0 or -1)
+	sbb		rax, rax	; rax - rax - cf (it can be either 0 or -1)
 	neg		rax			; two's complement (it can be either 0 or 1)
