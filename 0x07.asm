@@ -12,7 +12,7 @@ _start:
 	inc		rax		; rax = rax + 1
 	neg		rax		; rax = ~rax + 1
 
-; C code comparisson:
+; C code Comparison:
 ;
 ; #include <stdio.h>
 ; int main(void)
@@ -23,7 +23,7 @@ _start:
 ; 	printf("out: %d\n", rax);
 ; }
 ;
-; I guess the main takeway here (as in the previous snippet) 
+; The main takeway here (as in the previous snippet) 
 ; is that "not rax" can be rewritten as:
 ;
 ; inc	rax
