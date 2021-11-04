@@ -1,6 +1,6 @@
 ; This snippet, 0x03, sets rax to the lower value between rax and
 ; rdx, using the cf flag to check for carry.
-; Assemble with $ nasm -felf64 0x00.asm && ld 0x00.o && ./a.out
+; Assemble with $ nasm -felf64 0x03.asm && ld 0x03.o && ./a.out
 
 	global	_start
 	

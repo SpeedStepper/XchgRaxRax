@@ -1,7 +1,7 @@
 ; This snippet, 0x05,  allows you to check if a number, in rax, is between
 ; 5-9 using only one jump. Subtract 5 from a number and then jump if a number is below 4.
-;
-; Purpose: heavy usage of the flags register
+; Purpose: heavy usage of the flags register.
+; Assemble with $ nasm -felf64 0x05.asm && ld 0x05.o && ./a.out
 
 	global	_start
 	

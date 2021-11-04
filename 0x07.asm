@@ -1,15 +1,21 @@
-;
-; $Id: 0x07.asm,v 1.1.1.1 2016/03/27 08:40:12 raptor Exp $
-;
-; 0x07 explanation - from xchg rax,rax by xorpd@xorpd.net
-; Copyright (c) 2016 Marco Ivaldi <raptor@0xdeadbeef.info>
-;
-; This snippet sets rax with its initial value, in a way
-; similar to the previous snippet 0x06. The following C
-; code performs the same calculations:
+; This snippet, 0x07, sets rax with its initial value.
+; Assemble with $ nasm -felf64 0x07.asm && ld 0x07.o && ./a.out
+
+	global	_start
+	
+	section	.text
+_start:
+	mov		rax, 1	; Initialize rax (can be any number)
+
+	inc		rax		; rax = rax + 1 (makes value negative)
+	neg		rax		; rax = ~rax + 1
+	inc		rax		; rax = rax + 1
+	neg		rax		; rax = ~rax + 1
+
+; C code comparisson:
 ;
 ; #include <stdio.h>
-; main()
+; int main(void)
 ; {
 ; 	int rax = 5;
 ; 	printf("in:  %d\n", rax);
@@ -27,19 +33,3 @@
 ;
 ; not	rax
 ; inc	rax
-;
-; This analysis was facilitated by the assembly REPL rappel 
-; by yrp604@yahoo.com:
-;
-; https://github.com/yrp604/rappel/
-;
-
-	BITS 64
-	SECTION .text
-	global main
-
-main:
-	inc	rax		; rax = rax + 1
-	neg	rax		; rax = ~rax + 1
-	inc	rax		; rax = rax + 1
-	neg	rax		; rax = ~rax + 1
