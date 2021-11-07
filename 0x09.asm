@@ -1,9 +1,3 @@
-;
-; $Id: 0x09.asm,v 1.1.1.1 2016/03/27 08:40:12 raptor Exp $
-;
-; 0x09 explanation - from xchg rax,rax by xorpd@xorpd.net
-; Copyright (c) 2016 Marco Ivaldi <raptor@0xdeadbeef.info>
-;
 ; For values of rax greater than or equal to zero, this
 ; snippet performs an Euclidean (integer) division by 8
 ; of the content of rax and then adds the content of the
@@ -32,10 +26,4 @@
 ; 40-43		5		0
 ;
 
-	BITS 64
-	SECTION .text
-	global main
 
-main:
-	shr	rax,3		; rax = (int)rax / 8; cf = 1 if 3rd bit is 1
-	adc	rax,0		; rax = rax + cf
