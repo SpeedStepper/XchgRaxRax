@@ -1,6 +1,8 @@
 # Xchg Rax,Rax Solutions
 
  A forked repo of 0xdea's attempt at tackling the x86 asm code in xorpd's "xchg rax,rax" book with some minor improvements.
+ 
+ ![Book][/images/IMG_4401.JPG]
 
 ## Book Summary
 >
