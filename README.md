@@ -2,8 +2,6 @@
 
  A forked repo of 0xdea's attempt at tackling the x86 asm code in xorpd's "xchg rax,rax" book with some minor improvements.
  
- ![Book][https://github.com/SpeedStepper/XchgRaxRax/blob/master/images/IMG_4401.JPG]
-
 ## Book Summary
 >
 > "xchg rax,rax" is a collection of assembly gems and riddles I found over many years of reversing and writing assembly code. The book contains 0x40 short assembly snippets, each built to teach you one concept about assembly, math or life in general.
