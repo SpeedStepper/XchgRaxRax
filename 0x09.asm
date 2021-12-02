@@ -7,7 +7,7 @@
 	
 	section	.text
 _start:
-	mov		rax, 1		; Initialize rax (any value).
+	mov		rax, 9		; Initialize rax (any value).
 
 	shr		rax, 3		; rax = (int)rax / 8, cf = 1 if 3rd bit is 1
 	adc		rax, 0		; rax = rax + cf to round up.
